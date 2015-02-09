@@ -1,4 +1,4 @@
-<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.grrrgo.Mnemonica" version="1.0.0">
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.grrrgo.Mnemonica" version="1.0.1">
   <name>Mnemonica trainer</name>
   <description>Mnemonica trainer</description>
   <author href="http://www.baidu.com" email="zcshihuaidan@126.com">zcshihuaidan</author>
