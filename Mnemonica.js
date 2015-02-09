@@ -52,21 +52,21 @@ var Mnemonica = new Array();
   Mnemonica[51] = "HA";
   Mnemonica[52] = "D9";
   $(document).on("pageinit",function(){
-    $("body").on("swipeleft","#both",function(){
-      console.log("swipeleft on both");
+    $("body").on("swipe","#both",function(){
+      console.log("swipe on both");
       var num = Math.floor(Math.random()*52+1);
       $("#order1").html(num);
       $("#face1").attr("src","img/"+Mnemonica[num]+".JPG");
     });
-    $("body").on("swipeleft","#card",function(){
-      console.log("swipeleft on card");
+    $("body").on("swipe","#card",function(){
+      console.log("swipe on card");
       var num = Math.floor(Math.random()*52+1);
       $("#order2").html("??");
       $("#order2").on("tap",function(){$("#order2").html(num);});
       $("#face2").attr("src","img/"+Mnemonica[num]+".JPG");
   });
-    $("body").on("swipeleft","#number",function(){
-      console.log("swipeleft on number");
+    $("body").on("swipe","#number",function(){
+      console.log("swipe on number");
       var num = Math.floor(Math.random()*52+1);
       $("#face3").attr("src","img/back.png");
       $("#face3").on("tap",function(){$("#face3").attr("src","img/"+Mnemonica[num]+".JPG");});
