@@ -3,6 +3,7 @@
   <description>Mnemonica trainer</description>
   <author href="http://www.baidu.com" email="zcshihuaidan@126.com">zcshihuaidan</author>
   <content src="index.html"/>
+  <preference name="phonegap-version" value="3.5.0" />
   <preference name="permissions" value="none"/>
   <preference name="orientation" value="default"/>
   <preference name="target-device" value="universal"/>
