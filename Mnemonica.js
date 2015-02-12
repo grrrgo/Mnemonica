@@ -52,18 +52,18 @@ var Mnemonica = new Array();
   Mnemonica[51] = "HA";
   Mnemonica[52] = "D9";
   $(document).on("pageinit",function(){
-    $("body").on("swipe","#both",function(){
+    $("body").on("swipe",function(){
       var num = Math.floor(Math.random()*52+1);
       $("#order1").html(num);
       $("#face1").attr("src","img/"+Mnemonica[num]+".JPG");
     });
-    $("body").on("swipe","#card",function(){
+    $("body").on("swipe",function(){
       var num = Math.floor(Math.random()*52+1);
       $("#order2").html("??");
       $("#order2").on("tap",function(){$("#order2").html(num);});
       $("#face2").attr("src","img/"+Mnemonica[num]+".JPG");
   });
-    $("body").on("swipe","#number",function(){
+    $("body").on("swipe",function(){
       var num = Math.floor(Math.random()*52+1);
       $("#face3").attr("src","img/back.png");
       $("#face3").on("tap",function(){$("#face3").attr("src","img/"+Mnemonica[num]+".JPG");});
@@ -75,6 +75,14 @@ $(document).on('deviceready', function () {
   $(document).on('backbutton', function () {
     exitApp();
   });
+  $(".weibo").on('tap',function(){
+    window.open('http://www.weibo.com/1969038185/', '_system');
+  });
+  $("#vib").on("tap",function(){
+    navigator.notification.vibrate(3000);
+    navigator.notification.alert("Hello");
+    navigator.notification.beep(1); 
+  });
 });
 
 function exitApp() {
@@ -84,8 +92,7 @@ function exitApp() {
       if (buttonIndex === 1) {
         navigator.app.exitApp();
       }
-    },
-    'Exit'
+    }
   );
 }
 function takephoto(){
@@ -102,3 +109,4 @@ function onFail(message) {
     alert('Failed because: ' + message);
 }
 }
+

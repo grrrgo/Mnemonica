@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1, charset=UTF-8" http-equiv="Content-Type" />
+  <meta name=viewport content="width=device-width, initial-scale=1, charset=UTF-8" http-equiv="Content-Type" />
 <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
 <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
 <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
@@ -31,7 +31,7 @@
         <li><a href="#capture" data-transition="none">拍照</a></li>
       </ul>
     </div>
-    <p align="center">Weibo<a href="http://www.weibo.com/1969038185/">@zcshihuaidan</a></p>
+    <p align="center" class="weibo">Weibo@zcshihuaidan</a></p>
   </div>
 </div> 
 
@@ -56,7 +56,7 @@
         <li><a href="#capture" data-transition="none">拍照</a></li>
       </ul>
     </div>
-    <p align="center">Weibo<a href="http://www.weibo.com/1969038185/profile?topnav=1\&wvr=">@zcshihuaidan</a></p>
+    <p align="center" class="weibo">Weibo@zcshihuaidan</a></p>
   </div>
 </div> 
 
@@ -81,7 +81,7 @@
         <li><a href="#capture" data-transition="none">拍照</a></li>
       </ul>
     </div>
-    <p align="center">Weibo<a href="http://www.weibo.com/1969038185/">@zcshihuaidan</a></p>
+    <p align="center" class="weibo">Weibo@zcshihuaidan</a></p>
   </div>
 </div> 
 <div data-role="page" id="capture">
@@ -91,6 +91,7 @@
   <div data-role="content" style="background-image:url(img/juan1.jpg);">
     <button onclick="takephoto()">点击拍照</button>
     <div align="center"><img id="myImage" src="splash.png" alt="ready to be taken" width="180" height="240"></div>
+    <button id="vib">点击震动</button>
   </div>
   <div data-role="footer" data-position="fixed">
     <div data-role="navbar">
@@ -101,7 +102,7 @@
         <li><a href="#capture" class="ui-btn-active ui-state-persist" data-transition="none">拍照</a></li>
       </ul>
     </div>
-    <p align="center">Weibo<a href="http://www.weibo.com/1969038185/">@zcshihuaidan</a></p>
+    <p align="center" class="weibo">Weibo@zcshihuaidan</a></p>
   </div>
 </div>
 </body>
